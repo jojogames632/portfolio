@@ -1,0 +1,30 @@
+nav {
+	width: 80px;
+}
+
+header {
+	height: 80px;
+	background-color: #043E8A;
+}
+
+#mobileHeaderOff {
+	display: flex;
+}
+
+#mobileHeaderOn {
+	display: none;
+}
+
+#mobileHeaderOnBackground {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #043E8A;
+	z-index: -1;
+}
+
+#mobileHeaderOnNav {
+	width: 100vw;
+}
