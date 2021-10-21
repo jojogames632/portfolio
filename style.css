@@ -137,8 +137,79 @@ main {
 }
 
 .growthImage {
-	width: 70%;
-	object-fit: cover;
+	width: 80%;
+	object-fit: contain;
+	max-width: 350px;
 }
 
+/* Projects page ************************************/
 
+.projectsArea {
+	background-color: #043E8A;
+}
+
+.projectContainer {
+	background-color: white;
+	height: 225px;
+	width: 320px;
+}
+
+.projectInfosContainer a {
+	padding: 5px;
+	font-size: 12px;
+	height: 35px;
+	margin: 5px;
+	text-decoration: none;
+	color: white;
+}
+
+.projectContainer1 {
+	background-image: url(./images/recherche-emploi.png);
+	background-position: center;
+	background-size: cover;
+}
+
+.projectContainer2 {
+	background-image: url(./images/mediatheque.png);
+	background-position: center;
+	background-size: cover;
+}
+
+.projectInfosContainer {
+	width: 300px;
+}
+
+@media screen and (min-width: 1200px) {
+	section#aboutMeAnchor {
+		height: 450px;
+	}
+	section#projectsAnchor {
+		height: 550px;
+	}
+}
+
+/* Contact page ************************************/
+
+section#contactAnchor {
+	background-color: #C7D7DD;
+}
+
+label {
+	margin-bottom: 5px;
+}
+
+input,
+textarea {
+	margin-bottom: 10px;
+}
+
+form {
+	width: 90vw;
+	margin: auto;
+}
+
+@media screen and (min-width: 1200px) {
+	form {
+		width: 40vw;
+	}
+}

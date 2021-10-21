@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-	<!-- Header -->
+	<div class="container-fluid p-0">
+		<!-- Header -->
 		<header class="row w-100 p-2 m-0">
 			<nav class="d-flex justify-content-center col-9 col-md-10 col-xl-11">
 				<ul 
@@ -43,12 +44,12 @@
 		<!-- Main -->
 		<main>
 			<!-- About me -->
-			<div class="row row-cols-1 row-cols-lg-3 aboutMeArea">
-				<div class="col text-center mt-4">
-					<h1 
-						class="aboutMeTitle"
-						id="aboutMeAnchor"
-					>
+			<section 
+				class="row row-cols-1 row-cols-lg-3 aboutMeArea"
+				id="aboutMeAnchor"	
+			>
+				<div class="col text-center mt-4 d-flex flex-column justify-content-center">
+					<h1 class="aboutMeTitle">
 						Jonathan Viault
 					</h1>
 					<h2 class="aboutMeTitle">Développeur web & web mobile</h2>
@@ -56,8 +57,8 @@
 					<p class="text-white fw-bold">Tempérament curieux, calme et joyeux</p>
 					<p class="aboutMeBlueP fw-bold">~ Créons le monde de demain ~</p>
 				</div>
-				<div class="col d-flex justify-content-center">
-					<div class="skillsContainer mt-4">
+				<div class="col d-flex justify-content-center align-items-center">
+					<div class="skillsContainer">
 						<span>Back-end</span>
 						<div class="backEndContainer mb-2">
 							<div class="backEndFill"></div>
@@ -84,11 +85,122 @@
 					<img 
 						src="./images/growth.jpeg" 
 						alt="courbe de progression haussiere" 
-						class="growthImage mt-4"	
+						class="growthImage my-5"	
 					/>
 				</div>
-			</div>
+			</section>
 			<!-- Projects -->
+			<section 
+				id="projectsAnchor"
+				class="projectsArea row row-cols-1 row-cols-lg-3 d-flex"	
+			>
+				<h2 class="w-100 text-white text-center my-4">Projets</h2>
+				<div class="col d-flex flex-column align-items-center">
+					<div class="projectContainer projectContainer1 mt-3"></div>
+					<div class="projectInfosContainer">
+						<p class="text-center text-white mt-3">ECF blanc</p>
+						<p class="text-center text-white">(symfony / html / css / js)</p>
+						<div class="d-flex justify-content-between">
+							<a 
+								href="https://trtconseil.herokuapp.com/"
+								target="_blank"	
+							>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+									<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+									<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+								</svg>
+								Recherche d'emploi
+							</a>
+							<a 
+								href="https://github.com/jojogames632/trtconseil"
+								target="_blank"								
+							>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+									<path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+								</svg>
+								Code source
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col d-flex flex-column align-items-center">
+					<div class="projectContainer projectContainer2 mt-3"></div>
+					<div class="projectInfosContainer">
+						<p class="text-center text-white mt-3">ECF</p>
+						<p class="text-center text-white">(symfony / html / css / asynchrone js)</p>
+						<div class="d-flex justify-content-between">
+							<a 
+								href="https://mediatheque-studi.herokuapp.com/login"
+								target="_blank"
+							>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+									<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+									<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+								</svg>
+								Médiathèque
+							</a>
+							<a 
+								href="https://github.com/jojogames632/mediatheque"
+								target="_blank"	
+							>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+									<path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+								</svg>
+								Code source
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col d-flex flex-column align-items-center">
+					<div class="projectContainer projectContainer3 mt-3"></div>
+					<div class="projectInfosContainer">
+						<p class="text-center text-white mt-3">Projet personnel</p>
+						<p class="text-center text-white">(html / css / js)</p>
+						<div class="d-flex justify-content-between">	
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+									<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+									<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+								</svg>
+								Portfolio
+							</a>	
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+									<path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+								</svg>
+								Code source
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section 
+				id="contactAnchor"
+				class="row"	
+			>
+				<h2 class="text-center my-4">Contact</h2>
+				<div class="col">
+					<form 
+						method="POST" 
+						action="mail.php"
+						class="d-flex flex-column"
+					>
+						<label for="name">Prénom + Nom</label>
+						<input type="text" id="name" name="name">
+						<label for="email">Adresse email</label>
+						<input type="email" id="email" name="email">
+						<label for="subject">Sujet</label>
+						<input type="text" id="subject" name="subject">
+						
+						<label for="message">Message</label>
+						<textarea rows="10" cols="30" name="message"></textarea>
+						<div class="text-center mt-4">
+							<input type="submit" class="btn btn-sm btn-primary">
+						</div>
+						<p class="text-primary text-center mt-2">Boite mail consultée quotidiennement ✅</p>
+					</form>
+				</div>
+			</section>
 		</main>
 
 	</div>
