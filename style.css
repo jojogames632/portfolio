@@ -31,7 +31,7 @@ header {
 
 @media screen and (max-width: 1000px) {
 	li a {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	svg {
 		height: 25px;
@@ -136,6 +136,21 @@ main {
 	border-radius: 10px;
 }
 
+.bootstrapContainer {
+	width: 200px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	height: 8px;
+	background-color: white;
+}
+
+.bootstrapFill {
+	background-color: #043E8A;
+	width: 60%;
+	height: 6px;
+	border-radius: 10px;
+}
+
 .profileImage {
 	object-fit: cover;
 	width: 260px;
@@ -156,25 +171,10 @@ main {
 }
 
 .projectContainer {
-	background-color: white;
 	height: 225px;
 	width: 320px;
-	position: relative;
-}
-
-.projectContainer::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background-color: #C7D7DD;
-	opacity: 0;
-}
-
-.projectContainer:hover::after {
-	opacity: 0.3;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
 }
 
 .projectInfosContainer a {
@@ -186,28 +186,6 @@ main {
 	color: white;
 }
 
-.projectContainer1 {
-	background-image: url(./images/photo-react-app.png);
-	background-position: center;
-	background-size: cover;
-}
-
-.projectContainer2 {
-	background-image: url(./images/mediatheque.png);
-	background-position: center;
-	background-size: cover;
-}
-
-.projectContainer3 {
-	background-image: url(./images/jsGame.png);
-	background-position: center;
-	background-size: cover;
-}
-
-.projectInfosContainer {
-	background-color: rgba('4, 62, 138, .5');
-}
-
 .projectInfosContainer {
 	width: 300px;
 }
@@ -216,19 +194,43 @@ main {
 	font-size: 14px;
 }
 
-@media screen and (min-width: 1200px) {
 	section#aboutMeAnchor {
-		height: 450px;
+		min-height: 500px;
+	}
+	section#hobbiesAnchor {
+		min-height: 500px;
 	}
 	section#projectsAnchor {
-		height: 550px;
+		min-height: 600px;
 	}
+
+.projectInfosContainer {
+	margin-bottom: 40px;
+}
+
+/* Hobbies page ************************************/
+
+.hobbiesArea {
+	background-color: #C7D7DD;
+}
+
+.hobbiesArea h2,
+.hobbiesArea div {
+	color: #043E8A;
+}
+
+.hobbiesArea img {
+	object-fit: cover;
+	height: 150px;
+	width: 200px;
+	border-radius: 15px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Contact page ************************************/
 
 section#contactAnchor {
-	background-color: #C7D7DD;
+	background-color: #043E8A;
 }
 
 label {
