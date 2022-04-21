@@ -247,6 +247,14 @@ form {
 	margin: auto;
 }
 
+#submitBtn {
+	background-color: #C7D7DD;
+}
+
+.contactInfo {
+	color: #C7D7DD;
+}
+
 @media screen and (min-width: 1200px) {
 	form {
 		width: 40vw;
